@@ -80,7 +80,7 @@ Route::get('/dashboard/manager', [AdminController::class, 'managerDashboard'])->
 
 Route::get('/test-mail', function () {
     Mail::raw('This is a test email from Laravel.', function ($message) {
-        $message->to('molinaf@me.com')
+        $message->to('supervisor1@complypro.com.au')
             ->subject('Test Email');
     });
     return 'Test email sent.';
