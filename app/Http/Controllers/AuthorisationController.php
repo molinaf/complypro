@@ -71,8 +71,11 @@ class AuthorisationController extends Controller
             ->where('user_id', $selectedUser)
             ->get();
         }
-
-        return view('authorisations.view', [
+        $theView = 'authorisations.view';
+        if ($request->get('for_email')) {
+            $theView = 'emails.authorisation_notification';
+        }
+        return view($theView, [
             'user' => $user,
             'companies' => $companies,
             'users' => $users,
