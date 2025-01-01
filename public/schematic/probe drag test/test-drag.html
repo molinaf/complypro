@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Draggable Object</title>
+<style>
+  .draggable {
+    width: 100px;
+    height: 100px;
+    background-color: rbg(0,0,0,0);
+    position: absolute;
+    cursor: pointer;
+    user-select: none;
+  }
+  #droppable {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    left: 50%; /* Center the circle horizontally */
+    top: 50%; /* Center the circle vertically */
+    transform: translate(-50%, -50%); /* Adjust to center the circle properly */
+  }
+</style>
+</head>
+
+<body>
+
+<div id="droppable"></div>
+<div id="black-probe" class="draggable">
+	<img src="black-probe.png" alt="Black Probe">
+</div>
+<!--img src="red-probe.png" alt="Red Probe" class="draggable" id="red-probe"-->
+
+
+<script>
+let offsetX, offsetY;
+let isDragging = false;
+
+const black-probe = document.getElementById('black-probe');
+function startDrag(event) {
+	offsetX = event.clientX - event.target.getBoundingClientRect().left;
+	offsetY = event.clientY - event.target.getBoundingClientRect().top;
+
+	document.addEventListener("mousemove", move);
+	document.addEventListener("mouseup", stop);
+}
+
+function move(event) {
+	let x = event.clientX - offsetX;
+	let y = event.clientY - offsetY;
+	document.getElementById("black-probe").style.left = x + "px";
+	document.getElementById("black-probe").style.top = y + "px";
+
+	// Calculate the position of the square's top-left corner relative to the center of the circle
+	let squareCenterX = x + 10; // Adjust as needed (50 is half the width of the square)
+	let squareCenterY = y + 10; // Adjust as needed (50 is half the height of the square)
+
+	// Calculate the center of the circle
+	let circleCenterX = document.getElementById("droppable").offsetLeft + 20; // Adjust as needed (20 is half the width of the circle)
+	let circleCenterY = document.getElementById("droppable").offsetTop + 20; // Adjust as needed (20 is half the height of the circle)
+
+	// Calculate the distance between the square's top-left corner and the circle's center
+	let distance = Math.sqrt(Math.pow(squareCenterX - circleCenterX, 2) + Math.pow(squareCenterY - circleCenterY, 2));
+
+	// Check if the distance is less than or equal to the radius of the circle (20mm)
+	if (distance <= 20) {
+	  document.getElementById("droppable").style.backgroundColor = "green";
+	} else {
+	  document.getElementById("droppable").style.backgroundColor = "red";
+	}
+}
+
+function stop() {
+	document.removeEventListener("mousemove", move);
+	document.removeEventListener("mouseup", stop);
+}
+
+
+// Add mousedown event listener to start dragging
+black-probe.addEventListener('mousedown', startDrag);
+</script>
+
+</body>
+</html>

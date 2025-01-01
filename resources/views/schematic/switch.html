@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toggle Switch</title>
+<style>
+  #toggleSwitch {
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div id="toggleSwitch" onclick="toggleSwitch()">
+  <img id="switchImage" src="closed_switch.png" alt="Closed Switch">
+</div>
+
+<script>
+  var switchState = "closed"; // Initial state
+
+  function toggleSwitch() {
+    var switchImage = document.getElementById("switchImage");
+    
+    if (switchState === "closed") {
+      switchImage.src = "schema-switch1-open.png"; // Change to open switch image
+      switchImage.alt = "Open Switch";
+      switchState = "open"; // Update state
+    } else {
+      switchImage.src = "schema-switch1-close.png"; // Change to closed switch image
+      switchImage.alt = "Closed Switch";
+      switchState = "closed"; // Update state
+    }
+  }
+</script>
+
+</body>
+</html>

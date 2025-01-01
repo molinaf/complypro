@@ -1,0 +1,60 @@
+{
+    "fields": [
+        "ID",
+        "group",
+        "name",
+        "email",
+        "approverID"
+    ],
+    "records": [
+        {
+            "ID": "67370fff5319a",
+            "group": "FSOD",
+            "name": "Felino Molina",
+            "email": "molinaf@me.com",
+            "approverID": "1"
+        },
+        {
+            "ID": "6737323d07d58",
+            "group": "FSUD",
+            "name": "Venjie Diola",
+            "email": "venjie@gmail.com",
+            "approverID": "1"
+        },
+        {
+            "ID": "67387411e15d5",
+            "group": "SDSS",
+            "name": "Felino Molina",
+            "email": "felino.molina@powerwater.com.au",
+            "approverID": "1"
+        },
+        {
+            "ID": "6738742320d35",
+            "group": "SDTP",
+            "name": "Felino Molina",
+            "email": "felino.molina@powerwater.com.au",
+            "approverID": "1"
+        },
+        {
+            "ID": "6738742eab49d",
+            "group": "Remote",
+            "name": "The awesome Felino Molina",
+            "email": "felino.molina@powerwater.com.au",
+            "approverID": "2"
+        },
+        {
+            "ID": "6738743a41abf",
+            "group": "Metering",
+            "name": "Felino Molina",
+            "email": "felino.molina@powerwater.com.au",
+            "approverID": "1"
+        },
+        {
+            "ID": "67387448aff47",
+            "group": "CoreOps",
+            "name": "Felino Molina",
+            "email": "felino.molina@powerwater.com.au",
+            "approverID": "1"
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Numbers in C</title>
+</head>
+<body>
+    <script>
+        function getUniqueNumbers(A) {
+            let uniqueNumbersSet = new Set();
+
+            // Iterate through each sub-array in A
+            for (let i = 0; i < A.length; i++) {
+                let naIndex = A[i][1]; // Index for the subset A[na]
+                let nbIndex = A[i][2]; // Index for the subset A[nb]
+
+                // Add elements from subset A[na] to the set
+                for (let j = 0; j < A.length; j++) {
+                    uniqueNumbersSet.add(A[j][naIndex]);
+                }
+
+                // Add elements from subset A[nb] to the set
+                for (let j = 0; j < A.length; j++) {
+                    uniqueNumbersSet.add(A[j][nbIndex]);
+                }
+            }
+
+            // Convert the Set back to an array
+            let uniqueNumbersArray = Array.from(uniqueNumbersSet);
+
+            return uniqueNumbersArray;
+        }
+
+        // Example usage:
+        let A = [['elem1', 1, 2], ['elem2', 3, 4], ['elem3', 0, 1]];
+
+        let C = getUniqueNumbers(A);
+        console.log(C);
+    </script>
+</body>
+</html>

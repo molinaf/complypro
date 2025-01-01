@@ -1,0 +1,20 @@
+[28-Nov-2024 11:27:58 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/oddzo549/complypro.com.au/test/dashboard.php on line 10
+[28-Nov-2024 11:28:11 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/oddzo549/complypro.com.au/test/dashboard.php on line 10
+[28-Nov-2024 11:30:06 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/oddzo549/complypro.com.au/test/dashboard.php on line 10
+[28-Nov-2024 11:30:08 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/oddzo549/complypro.com.au/test/dashboard.php on line 10
+[29-Nov-2024 08:43:53 UTC] PHP Warning:  require_once(config.php): Failed to open stream: No such file or directory in /home/oddzo549/complypro.com.au/test/admin_manage_company.php on line 3
+[29-Nov-2024 08:43:53 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'config.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/oddzo549/complypro.com.au/test/admin_manage_company.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/oddzo549/complypro.com.au/test/admin_manage_company.php on line 3
+[29-Nov-2024 08:44:16 UTC] PHP Warning:  require_once(config.php): Failed to open stream: No such file or directory in /home/oddzo549/complypro.com.au/test/admin_manage_company.php on line 3
+[29-Nov-2024 08:44:16 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'config.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/oddzo549/complypro.com.au/test/admin_manage_company.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/oddzo549/complypro.com.au/test/admin_manage_company.php on line 3
+[29-Nov-2024 08:50:48 UTC] PHP Warning:  require_once(config.php): Failed to open stream: No such file or directory in /home/oddzo549/complypro.com.au/test/admin_manage_company.php on line 3
+[29-Nov-2024 08:50:48 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'config.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/oddzo549/complypro.com.au/test/admin_manage_company.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/oddzo549/complypro.com.au/test/admin_manage_company.php on line 3
+[29-Nov-2024 09:47:43 UTC] PHP Parse error:  syntax error, unexpected identifier "dashboard", expecting "," or ";" in /home/oddzo549/complypro.com.au/test/dashboard.php on line 19

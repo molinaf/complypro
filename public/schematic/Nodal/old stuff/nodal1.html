@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nodal Analysis</title>
+<script>
+    function calculateNodalAnalysis() {
+        var numComponents = parseInt(document.getElementById("numComponents").value);
+        var components = [];
+
+        for (var i = 0; i < numComponents; i++) {
+            var componentInfo = document.getElementById("component" + i).value.split(",");
+            var component = {
+                name: componentInfo[0],
+                value: parseFloat(componentInfo[1]),
+                nodes: componentInfo[2].split(" ")
+            };
+            components.push(component);
+        }
+		console.log(components)
+
+        var numNodes = getNumNodes(components);
+
+        var matrix = [];
+        for (var i = 0; i < numNodes + 1; i++) {
+            matrix.push([]);
+            for (var j = 0; j < numNodes ; j++) {
+                matrix[i].push(0);
+            }
+        }
+		console.log("numNodes",numNodes,"numComponents",numComponents,matrix)
+		console.log("======================================")
+		
+        for (var i = 0; i < numComponents; i++) {
+		    var component = components[i];
+		    if (component.name === "V") {
+		        var node1 = parseInt(component.nodes[0]);
+		        var node2 = parseInt(component.nodes[1]);
+			console.log(component.name,"i",i,"node1",node1,"node2",node2,"numNodes",numNodes)
+		        matrix[node1][numNodes] = component.value;
+		        matrix[node2][numNodes] = -component.value;
+			console.log("matrix["+node1+"]["+numNodes+"] = ",component.value)
+			console.log("matrix["+node2+"]["+numNodes+"] = ",-component.value)
+		    } else if (component.name === "R") {
+		        var node1 = parseInt(component.nodes[0]);
+		        var node2 = parseInt(component.nodes[1]);
+		        var conductance = 1 / component.value;
+			console.log(component.name,"i",i,"node1",node1,"node2",node2,"conductance",conductance)
+		        if (node1 !== 0) matrix[node1][node1] += conductance;
+		        if (node2 !== 0) matrix[node2][node2] += conductance;
+		        if (node1 !== 0 && node2 !== 0) {
+		            matrix[node1][node2] -= conductance;
+		            matrix[node2][node1] -= conductance;
+		        }
+			console.log("matrix["+node1+"]["+node2+"] = ", matrix[node1][node2])
+			console.log("matrix["+node2+"]["+node1+"] = ",matrix[node2][node1])
+		    }
+			//console.log("node1",node1,"node2",node2,matrix)
+		}
+
+		console.log(matrix)
+
+        var nodeVoltages = gaussElimination(matrix);
+		console.log("nodeVoltages",nodeVoltages)
+        var result = "<h2>Node Voltages:</h2>";
+        for (var i = 0; i < nodeVoltages.length; i++) {
+            result += "<p>V<sub>" + (i + 1) + "</sub>: " + nodeVoltages[i].toFixed(2) + "V</p>";
+        }
+
+        document.getElementById("result").innerHTML = result;
+    }
+
+    function gaussElimination(matrix) {
+        var n = matrix.length;
+
+        for (var i = 0; i < n; i++) {
+            var maxRow = i;
+            for (var j = i + 1; j < n; j++) {
+                if (Math.abs(matrix[j][i]) > Math.abs(matrix[maxRow][i])) {
+                    maxRow = j;
+                }
+            }
+
+            var temp = matrix[i];
+            matrix[i] = matrix[maxRow];
+            matrix[maxRow] = temp;
+
+            for (var k = i + 1; k < n; k++) {
+                var factor = matrix[k][i] / matrix[i][i];
+                for (var l = i; l < n + 1; l++) {
+                    matrix[k][l] -= factor * matrix[i][l];
+                }
+            }
+        }
+
+        var nodeVoltages = new Array(n).fill(0);
+
+        for (var i = n - 1; i >= 0; i--) {
+            nodeVoltages[i] = matrix[i][n] / matrix[i][i];
+            for (var j = i - 1; j >= 0; j--) {
+                matrix[j][n] -= matrix[j][i] * nodeVoltages[i];
+            }
+        }
+
+        return nodeVoltages;
+    }
+
+    function getNumNodes(components) {
+        var numNodes = 0;
+        for (var i = 0; i < components.length; i++) {
+            var nodes = components[i].nodes;
+            for (var j = 0; j < nodes.length; j++) {
+                var node = parseInt(nodes[j]);
+				//console.log("node",node)
+                if (node > numNodes) {
+                    numNodes = node;
+                }
+            }
+        }
+        return numNodes;
+    }
+</script>
+</head>
+<body>
+<h1>Nodal Analysis</h1>
+<form id="nodalForm">
+    <label for="numComponents">Number of Components:</label>
+    <input type="number" id="numComponents" min="1"  value="3" required><br><br>
+    <div id="components"></div>
+    <button type="button" onclick="addComponents()">Add Components</button><br><br>
+    <button type="button" onclick="calculateNodalAnalysis()">Calculate Node Voltages</button>
+</form>
+<div id="result"></div>
+
+<script>
+    function addComponents() {
+        var numComponents = parseInt(document.getElementById("numComponents").value);
+        var componentsDiv = document.getElementById("components");
+        componentsDiv.innerHTML = "";
+
+        //for (var i = 0; i < numComponents; i++) {
+            componentsDiv.innerHTML += "<label for='component0'>Component 1 (Name, Value, Nodes):</label>";
+            componentsDiv.innerHTML += "<input type='text' id='component0' value='V,12,1 0'><br>";
+            componentsDiv.innerHTML += "<label for='component1'>Component 2 (Name, Value, Nodes):</label>";
+            componentsDiv.innerHTML += "<input type='text' id='component1' value='R,10,1 2'><br>";
+            componentsDiv.innerHTML += "<label for='component2'>Component 3 (Name, Value, Nodes):</label>";
+            componentsDiv.innerHTML += "<input type='text' id='component2' value='R,5,0 2'><br>";
+        //}
+    }
+</script>
+</body>
+</html>

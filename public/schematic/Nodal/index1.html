@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schematic with MNA</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<script src="schematicMNA.js"></script>
+<script>
+// Unit Testing ===================
+ window.onload = function() {	
+	const circuit = new Circuit();
+	circuit.addVoltageSource('V1',[0,0],[1,0],12)
+	circuit.addResistor('RT', [0,1], [1,1], 10); //
+	circuit.links.push([[1,0],[1,1]])
+	circuit.links.push([[0,0],[0,1]])
+	circuit.links.push([["E"],[1,0]])
+	
+	
+	replaceValuesArr = replaceValues(circuit.components,circuit.links)
+	circuit.nodes = replaceValuesArr[0];
+	circuit.prepareNMA(replaceValuesArr[1])
+	circuit.nodesRC = replaceValuesArr[2]
+	const drawList = circuit.createSchematicElementsList()
+	console.log(circuit.nodes,circuit.nodesRC,replaceValuesArr[1])
+	schemList = drawSchemList(drawList);
+	createNodeObjects(circuit.nodesRC,circuit.V)
+  };
+  </script>
+
+</body>
+</html>

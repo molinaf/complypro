@@ -1,0 +1,547 @@
+[28-Nov-2024 02:49:31 UTC] Array
+(
+    [authorisation_id] => Array
+        (
+            [0] => 30
+        )
+
+    [item_id] => Array
+        (
+            [0] => 1
+        )
+
+    [table_name] => authorisation_f2f
+    [action] => create
+)
+
+[28-Nov-2024 02:49:31 UTC] authorisation_id:30   f2f_id:1
+[28-Nov-2024 02:49:31 UTC] Error inserting data: Duplicate entry '30-1' for key 'authorisation_f2f.PRIMARY'
+[28-Nov-2024 02:49:31 UTC] Error: Duplicate entry '30-1' for key 'authorisation_f2f.PRIMARY'
+[28-Nov-2024 02:50:04 UTC] Array
+(
+    [authorisation_id] => Array
+        (
+            [0] => 8
+            [1] => 9
+            [2] => 10
+            [3] => 11
+            [4] => 12
+            [5] => 13
+        )
+
+    [item_id] => Array
+        (
+            [0] => 1
+        )
+
+    [table_name] => authorisation_f2f
+    [action] => create
+)
+
+[28-Nov-2024 02:50:04 UTC] authorisation_id:8   f2f_id:1
+[28-Nov-2024 02:50:04 UTC] Error inserting data: Duplicate entry '8-1' for key 'authorisation_f2f.PRIMARY'
+[28-Nov-2024 02:50:04 UTC] Error: Duplicate entry '8-1' for key 'authorisation_f2f.PRIMARY'
+[28-Nov-2024 02:51:18 UTC] Array
+(
+    [authorisation_id] => Array
+        (
+            [0] => 8
+            [1] => 9
+            [2] => 10
+            [3] => 11
+            [4] => 12
+            [5] => 13
+        )
+
+    [item_id] => Array
+        (
+            [0] => 1
+        )
+
+    [table_name] => authorisation_f2f
+    [action] => create
+)
+
+[28-Nov-2024 02:51:18 UTC] authorisation_id:8   f2f_id:1
+[28-Nov-2024 02:51:18 UTC] Error inserting data: Duplicate entry '8-1' for key 'authorisation_f2f.PRIMARY'
+[28-Nov-2024 02:51:18 UTC] authorisation_id:9   f2f_id:1
+[28-Nov-2024 02:51:18 UTC] Insert successful.
+[28-Nov-2024 02:51:18 UTC] authorisation_id:10   f2f_id:1
+[28-Nov-2024 02:51:18 UTC] Insert successful.
+[28-Nov-2024 02:51:18 UTC] authorisation_id:11   f2f_id:1
+[28-Nov-2024 02:51:18 UTC] Insert successful.
+[28-Nov-2024 02:51:18 UTC] authorisation_id:12   f2f_id:1
+[28-Nov-2024 02:51:18 UTC] Insert successful.
+[28-Nov-2024 02:51:18 UTC] authorisation_id:13   f2f_id:1
+[28-Nov-2024 02:51:18 UTC] Insert successful.
+[28-Nov-2024 02:51:18 UTC] Error: Duplicate entry '13-1' for key 'authorisation_f2f.PRIMARY'
+[28-Nov-2024 02:51:26 UTC] Array
+(
+    [authorisation_id] => 30
+    [item_id] => 1
+    [table_name] => authorisation_f2f
+    [action] => delete
+)
+
+[28-Nov-2024 02:51:26 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:26 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:26 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:26 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:26 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:26 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:26 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:26 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:26 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:26 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:26 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:26 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:26 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:26 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:28 UTC] Array
+(
+    [authorisation_id] => 8
+    [item_id] => 1
+    [table_name] => authorisation_f2f
+    [action] => delete
+)
+
+[28-Nov-2024 02:51:28 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:28 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:28 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:28 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:28 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:28 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:28 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:28 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:28 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:28 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:28 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:28 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:30 UTC] Array
+(
+    [authorisation_id] => 9
+    [item_id] => 1
+    [table_name] => authorisation_f2f
+    [action] => delete
+)
+
+[28-Nov-2024 02:51:30 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:30 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:30 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:30 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:30 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:30 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:30 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:30 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:30 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:30 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:31 UTC] Array
+(
+    [authorisation_id] => 10
+    [item_id] => 1
+    [table_name] => authorisation_f2f
+    [action] => delete
+)
+
+[28-Nov-2024 02:51:31 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:31 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:31 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:31 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:31 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:31 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:31 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:31 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:33 UTC] Array
+(
+    [authorisation_id] => 11
+    [item_id] => 1
+    [table_name] => authorisation_f2f
+    [action] => delete
+)
+
+[28-Nov-2024 02:51:33 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:33 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:33 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:33 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:33 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:33 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:34 UTC] Array
+(
+    [authorisation_id] => 12
+    [item_id] => 1
+    [table_name] => authorisation_f2f
+    [action] => delete
+)
+
+[28-Nov-2024 02:51:34 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:34 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:34 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:34 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:36 UTC] Array
+(
+    [authorisation_id] => 13
+    [item_id] => 1
+    [table_name] => authorisation_f2f
+    [action] => delete
+)
+
+[28-Nov-2024 02:51:36 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:36 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:51:37 UTC] Array
+(
+    [authorisation_id] => 11
+    [item_id] => 2
+    [table_name] => authorisation_f2f
+    [action] => delete
+)
+
+[28-Nov-2024 02:51:45 UTC] Array
+(
+    [authorisation_id] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+            [3] => 4
+            [4] => 5
+            [5] => 6
+            [6] => 7
+        )
+
+    [item_id] => Array
+        (
+            [0] => 1
+        )
+
+    [table_name] => authorisation_f2f
+    [action] => create
+)
+
+[28-Nov-2024 02:51:45 UTC] authorisation_id:1   f2f_id:1
+[28-Nov-2024 02:51:45 UTC] Insert successful.
+[28-Nov-2024 02:51:45 UTC] authorisation_id:2   f2f_id:1
+[28-Nov-2024 02:51:45 UTC] Insert successful.
+[28-Nov-2024 02:51:45 UTC] authorisation_id:3   f2f_id:1
+[28-Nov-2024 02:51:45 UTC] Insert successful.
+[28-Nov-2024 02:51:45 UTC] authorisation_id:4   f2f_id:1
+[28-Nov-2024 02:51:45 UTC] Insert successful.
+[28-Nov-2024 02:51:45 UTC] authorisation_id:5   f2f_id:1
+[28-Nov-2024 02:51:45 UTC] Insert successful.
+[28-Nov-2024 02:51:45 UTC] authorisation_id:6   f2f_id:1
+[28-Nov-2024 02:51:45 UTC] Insert successful.
+[28-Nov-2024 02:51:45 UTC] authorisation_id:7   f2f_id:1
+[28-Nov-2024 02:51:45 UTC] Insert successful.
+[28-Nov-2024 02:51:45 UTC] Error: Duplicate entry '7-1' for key 'authorisation_f2f.PRIMARY'
+[28-Nov-2024 02:52:02 UTC] Array
+(
+    [authorisation_id] => Array
+        (
+            [0] => 1
+            [1] => 2
+            [2] => 3
+            [3] => 4
+            [4] => 5
+            [5] => 6
+            [6] => 7
+        )
+
+    [item_id] => Array
+        (
+            [0] => 1
+        )
+
+    [table_name] => authorisation_f2f
+    [action] => create
+)
+
+[28-Nov-2024 02:52:02 UTC] authorisation_id:1   f2f_id:1
+[28-Nov-2024 02:52:02 UTC] Error inserting data: Duplicate entry '1-1' for key 'authorisation_f2f.PRIMARY'
+[28-Nov-2024 02:52:02 UTC] authorisation_id:2   f2f_id:1
+[28-Nov-2024 02:52:02 UTC] Error inserting data: Duplicate entry '2-1' for key 'authorisation_f2f.PRIMARY'
+[28-Nov-2024 02:52:02 UTC] authorisation_id:3   f2f_id:1
+[28-Nov-2024 02:52:02 UTC] Error inserting data: Duplicate entry '3-1' for key 'authorisation_f2f.PRIMARY'
+[28-Nov-2024 02:52:02 UTC] authorisation_id:4   f2f_id:1
+[28-Nov-2024 02:52:02 UTC] Error inserting data: Duplicate entry '4-1' for key 'authorisation_f2f.PRIMARY'
+[28-Nov-2024 02:52:02 UTC] authorisation_id:5   f2f_id:1
+[28-Nov-2024 02:52:02 UTC] Error inserting data: Duplicate entry '5-1' for key 'authorisation_f2f.PRIMARY'
+[28-Nov-2024 02:52:02 UTC] authorisation_id:6   f2f_id:1
+[28-Nov-2024 02:52:02 UTC] Error inserting data: Duplicate entry '6-1' for key 'authorisation_f2f.PRIMARY'
+[28-Nov-2024 02:52:02 UTC] authorisation_id:7   f2f_id:1
+[28-Nov-2024 02:52:02 UTC] Error inserting data: Duplicate entry '7-1' for key 'authorisation_f2f.PRIMARY'
+[28-Nov-2024 02:52:02 UTC] Error: Duplicate entry '7-1' for key 'authorisation_f2f.PRIMARY'
+[28-Nov-2024 02:52:32 UTC] Array
+(
+    [authorisation_id] => 1
+    [item_id] => 1
+    [table_name] => authorisation_f2f
+    [action] => delete
+)
+
+[28-Nov-2024 02:52:32 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:32 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:32 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:32 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:32 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:32 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:32 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:32 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:32 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:32 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:32 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:32 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:35 UTC] Array
+(
+    [authorisation_id] => 2
+    [item_id] => 1
+    [table_name] => authorisation_f2f
+    [action] => delete
+)
+
+[28-Nov-2024 02:52:35 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:35 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:35 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:35 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:35 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:35 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:35 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:35 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:35 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:35 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:37 UTC] Array
+(
+    [authorisation_id] => 3
+    [item_id] => 1
+    [table_name] => authorisation_f2f
+    [action] => delete
+)
+
+[28-Nov-2024 02:52:37 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:37 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:37 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:37 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:37 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:37 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:37 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:37 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:38 UTC] Array
+(
+    [authorisation_id] => 4
+    [item_id] => 1
+    [table_name] => authorisation_f2f
+    [action] => delete
+)
+
+[28-Nov-2024 02:52:38 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:38 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:38 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:38 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:38 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:38 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:40 UTC] Array
+(
+    [authorisation_id] => 5
+    [item_id] => 1
+    [table_name] => authorisation_f2f
+    [action] => delete
+)
+
+[28-Nov-2024 02:52:40 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:40 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:40 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:40 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:42 UTC] Array
+(
+    [authorisation_id] => 6
+    [item_id] => 1
+    [table_name] => authorisation_f2f
+    [action] => delete
+)
+
+[28-Nov-2024 02:52:42 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:42 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:52:44 UTC] Array
+(
+    [authorisation_id] => 7
+    [item_id] => 1
+    [table_name] => authorisation_f2f
+    [action] => delete
+)
+
+[28-Nov-2024 02:52:49 UTC] Array
+(
+    [authorisation_id] => Array
+        (
+            [0] => 10
+        )
+
+    [item_id] => Array
+        (
+            [0] => 1
+        )
+
+    [table_name] => authorisation_f2f
+    [action] => create
+)
+
+[28-Nov-2024 02:52:49 UTC] authorisation_id:10   f2f_id:1
+[28-Nov-2024 02:52:49 UTC] Insert successful.
+[28-Nov-2024 02:52:49 UTC] Error: Duplicate entry '10-1' for key 'authorisation_f2f.PRIMARY'
+[28-Nov-2024 02:53:03 UTC] Array
+(
+    [authorisation_id] => Array
+        (
+            [0] => 8
+            [1] => 9
+            [2] => 10
+            [3] => 11
+            [4] => 12
+            [5] => 13
+        )
+
+    [item_id] => Array
+        (
+            [0] => 1
+        )
+
+    [table_name] => authorisation_f2f
+    [action] => create
+)
+
+[28-Nov-2024 02:53:03 UTC] authorisation_id:8   f2f_id:1
+[28-Nov-2024 02:53:03 UTC] Insert successful.
+[28-Nov-2024 02:53:03 UTC] authorisation_id:9   f2f_id:1
+[28-Nov-2024 02:53:03 UTC] Insert successful.
+[28-Nov-2024 02:53:03 UTC] authorisation_id:10   f2f_id:1
+[28-Nov-2024 02:53:03 UTC] Error inserting data: Duplicate entry '10-1' for key 'authorisation_f2f.PRIMARY'
+[28-Nov-2024 02:53:03 UTC] authorisation_id:11   f2f_id:1
+[28-Nov-2024 02:53:03 UTC] Insert successful.
+[28-Nov-2024 02:53:03 UTC] authorisation_id:12   f2f_id:1
+[28-Nov-2024 02:53:03 UTC] Insert successful.
+[28-Nov-2024 02:53:03 UTC] authorisation_id:13   f2f_id:1
+[28-Nov-2024 02:53:03 UTC] Insert successful.
+[28-Nov-2024 02:53:03 UTC] Error: Duplicate entry '13-1' for key 'authorisation_f2f.PRIMARY'
+[28-Nov-2024 02:53:11 UTC] Array
+(
+    [authorisation_id] => Array
+        (
+            [0] => 8
+            [1] => 9
+            [2] => 10
+            [3] => 11
+            [4] => 12
+            [5] => 13
+        )
+
+    [item_id] => Array
+        (
+            [0] => 1
+        )
+
+    [table_name] => authorisation_f2f
+    [action] => create
+)
+
+[28-Nov-2024 02:53:11 UTC] authorisation_id:8   f2f_id:1
+[28-Nov-2024 02:53:11 UTC] Error inserting data: Duplicate entry '8-1' for key 'authorisation_f2f.PRIMARY'
+[28-Nov-2024 02:53:11 UTC] authorisation_id:9   f2f_id:1
+[28-Nov-2024 02:53:11 UTC] Error inserting data: Duplicate entry '9-1' for key 'authorisation_f2f.PRIMARY'
+[28-Nov-2024 02:53:11 UTC] authorisation_id:10   f2f_id:1
+[28-Nov-2024 02:53:11 UTC] Error inserting data: Duplicate entry '10-1' for key 'authorisation_f2f.PRIMARY'
+[28-Nov-2024 02:53:11 UTC] authorisation_id:11   f2f_id:1
+[28-Nov-2024 02:53:11 UTC] Error inserting data: Duplicate entry '11-1' for key 'authorisation_f2f.PRIMARY'
+[28-Nov-2024 02:53:11 UTC] authorisation_id:12   f2f_id:1
+[28-Nov-2024 02:53:11 UTC] Error inserting data: Duplicate entry '12-1' for key 'authorisation_f2f.PRIMARY'
+[28-Nov-2024 02:53:11 UTC] authorisation_id:13   f2f_id:1
+[28-Nov-2024 02:53:11 UTC] Error inserting data: Duplicate entry '13-1' for key 'authorisation_f2f.PRIMARY'
+[28-Nov-2024 02:53:11 UTC] Error: Duplicate entry '13-1' for key 'authorisation_f2f.PRIMARY'
+[28-Nov-2024 02:53:14 UTC] Array
+(
+    [authorisation_id] => 10
+    [item_id] => 1
+    [table_name] => authorisation_f2f
+    [action] => delete
+)
+
+[28-Nov-2024 02:53:14 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:53:14 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:53:14 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:53:14 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:53:14 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:53:14 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:53:14 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:53:14 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:53:14 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:53:14 UTC] PHP Warning:  Undefined array key "authorisation_f2f_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 77
+[28-Nov-2024 02:53:26 UTC] Array
+(
+    [authorisation_id] => Array
+        (
+            [0] => 8
+        )
+
+    [item_id] => Array
+        (
+            [0] => 1
+        )
+
+    [table_name] => authorisation_f2f
+    [action] => create
+)
+
+[28-Nov-2024 02:53:26 UTC] authorisation_id:8   f2f_id:1
+[28-Nov-2024 02:53:26 UTC] Error inserting data: Duplicate entry '8-1' for key 'authorisation_f2f.PRIMARY'
+[28-Nov-2024 02:53:26 UTC] Error: Duplicate entry '8-1' for key 'authorisation_f2f.PRIMARY'
+[28-Nov-2024 02:53:32 UTC] Array
+(
+    [authorisation_id] => Array
+        (
+            [0] => 9
+        )
+
+    [item_id] => Array
+        (
+            [0] => 1
+        )
+
+    [table_name] => authorisation_f2f
+    [action] => create
+)
+
+[28-Nov-2024 02:53:32 UTC] authorisation_id:9   f2f_id:1
+[28-Nov-2024 02:53:32 UTC] Error inserting data: Duplicate entry '9-1' for key 'authorisation_f2f.PRIMARY'
+[28-Nov-2024 02:53:32 UTC] Error: Duplicate entry '9-1' for key 'authorisation_f2f.PRIMARY'
+[28-Nov-2024 02:53:36 UTC] Array
+(
+    [authorisation_id] => Array
+        (
+            [0] => 10
+        )
+
+    [item_id] => Array
+        (
+            [0] => 1
+        )
+
+    [table_name] => authorisation_f2f
+    [action] => create
+)
+
+[28-Nov-2024 02:53:36 UTC] authorisation_id:10   f2f_id:1
+[28-Nov-2024 02:53:36 UTC] Insert successful.
+[28-Nov-2024 02:53:36 UTC] Error: Duplicate entry '10-1' for key 'authorisation_f2f.PRIMARY'
+[28-Nov-2024 09:23:19 UTC] Array
+(
+)
+
+[28-Nov-2024 09:23:19 UTC] PHP Warning:  Undefined array key "authorisation_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 7
+[28-Nov-2024 09:23:19 UTC] PHP Warning:  Undefined array key "item_id" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 8
+[28-Nov-2024 09:23:19 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 8
+[28-Nov-2024 09:23:19 UTC] PHP Warning:  Undefined array key "table_name" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 9
+[28-Nov-2024 09:23:19 UTC] PHP Warning:  Undefined array key "action" in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 10
+[28-Nov-2024 09:23:19 UTC] PHP Warning:  Undefined array key 1 in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 14
+[28-Nov-2024 09:23:19 UTC] Invalid action provided.
+[28-Nov-2024 09:23:19 UTC] PHP Warning:  Undefined variable $stmt in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 55
+[28-Nov-2024 09:23:19 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/oddzo549/complypro.com.au/dashboard/manage_links.php:55
+Stack trace:
+#0 {main}
+  thrown in /home/oddzo549/complypro.com.au/dashboard/manage_links.php on line 55

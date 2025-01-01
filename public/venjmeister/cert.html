@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Power Services - Work Practices and Training - Authorisation Course</title>
+<link rel="stylesheet" href="css\style.css">
+</head>
+<body class="certificate-container">
+<a href="home.php"><img src="images\logo.png" alt="Logo Image" style="width: 194px; display: inline-block;"></a><br><br>
+<div class="certificate">
+    <h1>Certificate of Completion</h1>
+    <p>This certifies that</p>
+    <p class="dynamic-field" id="name">[NAME]</p>
+    <p>has successfully completed the module</p>
+    <p class="dynamic-field" id="module-title">[MODULE TITLE]</p>
+    <p class="date">Date: <span class="dynamic-field" id="completion-date">[DATE]</span></p>
+    <p class="percentage">Score: <span class="dynamic-field" id="percentage">[PERCENTAGE]%</span></p>
+</div>
+
+<script>
+
+	// Original date string in "YYYY-MM-DD" format
+	let dateStr = "2024-11-13";
+
+	// Split the date string into parts
+	let [year, month, day] = dateStr.split("-");
+
+	// Define an array of month names
+	let monthNames = ["January", "February", "March", "April", "May", "June", 
+                  "July", "August", "September", "October", "November", "December"];
+
+	// Format the date as "DD Month YYYY"
+	let formattedDate = `${parseInt(day)} ${monthNames[parseInt(month) - 1]} ${year}`;
+
+	// Insert the formatted date into the HTML
+	document.getElementById("completion-date").textContent = formattedDate;
+
+    // Example data insertion
+    document.getElementById("name").textContent = "Name";
+    document.getElementById("module-title").textContent = "Module Title";
+    document.getElementById("completion-date").textContent = formattedDate;
+    document.getElementById("percentage").textContent = "100%";
+</script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+[09-Nov-2024 22:07:39 UTC] PHP Warning:  file_put_contents(tokens/u1EuHym/y2PqQQXo1W02emNGSkViR2dJ): Failed to open stream: No such file or directory in /home/oddzo549/e2elearning.com.au/test/phpScripts/emailToken.php on line 53
+[09-Nov-2024 22:11:03 UTC] PHP Warning:  file_put_contents(tokens/eNnB/m3x3f7kxKrMYkF7nUUrUU4wSWp4): Failed to open stream: No such file or directory in /home/oddzo549/e2elearning.com.au/test/phpScripts/emailToken.php on line 53
+[09-Nov-2024 22:25:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function substring() in /home/oddzo549/e2elearning.com.au/test/phpScripts/emailToken.php:53
+Stack trace:
+#0 {main}
+  thrown in /home/oddzo549/e2elearning.com.au/test/phpScripts/emailToken.php on line 53
+[09-Nov-2024 22:28:57 UTC] PHP Parse error:  syntax error, unexpected variable "$_GET" in /home/oddzo549/e2elearning.com.au/test/phpScripts/verify.php on line 15
+[09-Nov-2024 22:28:58 UTC] PHP Parse error:  syntax error, unexpected variable "$_GET" in /home/oddzo549/e2elearning.com.au/test/phpScripts/verify.php on line 15
+[09-Nov-2024 22:29:08 UTC] PHP Parse error:  syntax error, unexpected variable "$_GET" in /home/oddzo549/e2elearning.com.au/test/phpScripts/verify.php on line 15
+[09-Nov-2024 22:29:20 UTC] PHP Parse error:  syntax error, unexpected variable "$_GET" in /home/oddzo549/e2elearning.com.au/test/phpScripts/verify.php on line 15
+[09-Nov-2024 23:19:08 UTC] PHP Parse error:  Unclosed '{' on line 17 does not match ')' in /home/oddzo549/e2elearning.com.au/test/phpScripts/verify.php on line 25
+[09-Nov-2024 23:19:24 UTC] PHP Parse error:  Unclosed '{' on line 17 does not match ')' in /home/oddzo549/e2elearning.com.au/test/phpScripts/verify.php on line 25
+[09-Nov-2024 23:24:03 UTC] PHP Parse error:  syntax error, unexpected token ";", expecting ")" in /home/oddzo549/e2elearning.com.au/test/phpScripts/verify.php on line 25
+[09-Nov-2024 23:26:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function substring() in /home/oddzo549/e2elearning.com.au/test/phpScripts/verify.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/oddzo549/e2elearning.com.au/test/phpScripts/verify.php on line 25
+[09-Nov-2024 23:26:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function substring() in /home/oddzo549/e2elearning.com.au/test/phpScripts/verify.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/oddzo549/e2elearning.com.au/test/phpScripts/verify.php on line 25

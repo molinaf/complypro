@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replace Values</title>
+</head>
+<body>
+    <script>
+        function replaceValues(A, X) {
+            let replacedA = [];
+
+            // Iterate over each entry in A
+            for (let i = 0; i < A.length; i++) {
+                let replacedEntry = [];
+
+                // Iterate over elements of the entry
+                for (let j = 0; j < A[i].length; j++) {
+                    // If element matches any element in X except the first one, replace it with s1
+                    if (X.includes(A[i][j]) && X.indexOf(A[i][j]) !== 0) {
+                        replacedEntry.push('s1');
+                    } else {
+                        replacedEntry.push(A[i][j]);
+                    }
+                }
+
+                replacedA.push(replacedEntry);
+            }
+
+            return replacedA;
+        }
+
+        // Example usage:
+        let A = [['name1', 'id1', 'a1', 'b1', 'tot1'], ['name2', 'id2', 'a2', 'b2', 'tot2'], ['name1', 'id1', 'b2', 'a1', 'tot3']];
+        let X = ['s1', 'a1', 'b2', 's4'];
+
+        let replacedA = replaceValues(A, X);
+        console.log(replacedA);
+    </script>
+</body>
+</html>

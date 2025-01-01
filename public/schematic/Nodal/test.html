@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resistor Value Calculator</title>
+</head>
+<body>
+
+<h2>Resistor Value Calculator</h2>
+
+<label for="resistorInput">Enter Resistor Value:</label>
+<input type="text" id="resistorInput">
+<button onclick="calculateResistance()">Calculate</button>
+
+<p id="result"></p>
+
+<script>
+function calculateResistance() {
+    var resistorInput = document.getElementById("resistorInput").value;
+    var resultElement = document.getElementById("result");
+
+    // Convert the input to a string
+    var resistor = String(resistorInput);
+
+    // Check if the resistor value contains "M"
+    if (resistor.includes("M")) {
+        // Extract the number part and multiply it by 1,000,000
+        var resistance = parseFloat(resistor) * 1000000;
+        resultElement.textContent = "Resistance: " + resistance.toFixed(2) + " ohms";
+    } else if (resistor.includes("K")) {
+        // Extract the number part and multiply it by 1,000
+        var resistance = parseFloat(resistor) * 1000;
+        resultElement.textContent = "Resistance: " + resistance.toFixed(2) + " ohms";
+    } else {
+        // If no suffix is present, return the number itself
+        var resistance = parseFloat(resistor);
+        resultElement.textContent = "Resistance: " + resistance.toFixed(2) + " ohms";
+    }
+}
+</script>
+
+</body>
+</html>

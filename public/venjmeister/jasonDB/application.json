@@ -1,0 +1,80 @@
+{
+    "fields": [
+        "ID",
+        "Date",
+        "Name",
+        "email",
+        "Company",
+        "CompanyName",
+        "group",
+        "endorserName",
+        "EndorserEmail",
+        "endorseDate",
+        "ApprovedBy",
+        "ApproverEmail",
+        "ApproveDate",
+        "AuthCodes",
+        "ModuleIDs"
+    ],
+    "records": [
+        {
+            "ID": "673fd356da15b",
+            "Date": "22-Nov-2024",
+            "Name": "Felino Molina",
+            "email": "felino.molina@powerwater.com.au",
+            "Company": "Contractor",
+            "CompanyName": "Oddzon Sotware Pty Ltd",
+            "group": "Remote",
+            "endorserName": "The awesome Felino Molina",
+            "EndorserEmail": "felino.molina@powerwater.com.au",
+            "AuthCodes": "",
+            "ModuleIDs": "",
+            "endorseDate": "22-Nov-2024",
+            "authCodes": [
+                "ATA1",
+                "ATA2",
+                "ATA3",
+                "ATA6",
+                "ATA7",
+                "ASST"
+            ],
+            "moduleIDs": {
+                "0": "02",
+                "5": "99"
+            },
+            "completedModuleIDs": [
+                "02",
+                "99"
+            ],
+            "ApprovedBy": "Venjie Diola",
+            "ApproverEmail": "Venjie@gmail.com",
+            "ApproveDate": "2024-11-22"
+        },
+        {
+            "ID": "673fd5fc63c91",
+            "Date": "22-Nov-2024",
+            "Name": "Felino Molina",
+            "email": "felino.molina@powerwater.com.au",
+            "Company": "PWC",
+            "CompanyName": "",
+            "group": "FSUD",
+            "endorserName": "Venjie Diola",
+            "EndorserEmail": "venjie@gmail.com",
+            "AuthCodes": "",
+            "ModuleIDs": "",
+            "endorseDate": "22-Nov-2024",
+            "authCodes": [
+                "ASST"
+            ],
+            "moduleIDs": [
+                "99"
+            ],
+            "completedModuleIDs": [
+                "99"
+            ],
+            "ApprovedBy": "Felino Molina",
+            "ApproverEmail": "felino.molina@powerwater.com.au",
+            "ApproveDate": "2024-11-22"
+        }
+    ]
+}

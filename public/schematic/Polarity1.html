@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Test Supply Circuit</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<img src="felino-bg-screen1.png" alt="background" class="bgimg" id="bgimg" style="position: absolute; top: 0; left: 0; height: auto;">
+<button onclick="circuit.vFlag = !circuit.vFlag; displayVoltage()" style="position: relative; top: 50; left: 0; height: auto;">Show/hide node voltages</button>
+<button onclick="circuit.vFlag1 = !circuit.vFlag1; toggleValues()" style="position: relative; top: 50; left: 0; height: auto;">Show/hide values</button>
+<span style="position: relative; top: 50; left: 100; height: auto;">&nbsp&nbsp&nbsp&nbsp&nbspVolt Meter
+<input type="radio" id="hiZ" name="options" checked onclick='meterZ(10000000)'>
+<label for="option1">Hi Z</label>. 
+<input type="radio" id="loZ" name="options" onclick='meterZ(3300)'>
+<label for="option2">Lo Z</label></span>
+<br>
+<script src="schematicMNA.js"></script>
+
+<script>
+// Unit Testing ===================
+ //window.onload = function() {	
+	let circuit = new Circuit();
+	circuit.addVoltageSource('V1',[0,0],[1,0],230)
+	circuit.addResistor('RT', [0,0], [0,1], .05); //
+	circuit.addResistor('RA', [0,1], [0,3], .1, 0, 1); //
+	circuit.addResistor('RAN', [0,3], [1,3], '10M'); //
+	circuit.addResistor('RN', [1,2], [1,0], .11, 0, 1); //
+	circuit.addResistor('RF', [2,5], [0,5], .05, 0, 1); //
+	circuit.addResistor('RCN', [3,3], [1,3], 0.1 ,0,1); //
+	circuit.addResistor('RCA', [2,5], [3,5], .09,0,1); //
+	circuit.addResistor('RE1', [5,2], [6,2], 25, 0,1); //	
+	
+	//circuit.addCurrentSource('IN', [2,7], [1,7], 0); //* isReverse
+	circuit.links.push([[0,3],[0,5]])
+	circuit.links.push([[1,2],[1,3]])
+	circuit.links.push([[0,5],[1,5]])
+	//circuit.links.push([[1,2],[1,3],[1,7]])
+	//circuit.links.push([[3,3],[4,3],[5,3],[5,5]])
+	//circuit.links.push([[6,7],[6,6]])
+	//circuit.links.push([[5,6],[5,7]])
+	//circuit.links.push([[4,7],[4,8],[6,8]])
+	//circuit.links.push([[3,5],[4,5],[4,4]])
+	circuit.links.push([["E"],[1,0],[6,2]])
+	circuit.addR('Rmeter', 1,1, 10000000); //
+	
+	replaceValuesArr = replaceValues(circuit.components,circuit.links)
+	circuit.nodes = replaceValuesArr[0];
+	circuit.prepareNMA(replaceValuesArr[1])
+	circuit.nodesRC = replaceValuesArr[2]
+	
+	let drawList = circuit.createSchematicElementsList()
+	schemList = drawSchemList(drawList);
+	createNodesFromLinks(circuit.links)
+	createNodeObjects(circuit.nodesRC,circuit.V, 0)
+ // };
+  </script>
+<img src="Volt-Meter.png" alt="Volt Meter" class="voltMeter" id="voltMeter">
+<div class="voltMeter" style="position: absolute; top: 330px; left: 50px; text-align: right;"><span id="meterText" style="font-size: 30px;">0V</span></div>
+<img src="black-probe.png" alt="Black Probe" class="draggable" id="draggableImageBlack" style="position: absolute; top: 590px; left: 130px;">
+<img src="red-probe.png" alt="Red Probe" class="draggable" id="draggableImageRed" style="position: absolute; top: 590px; left: 30px;">
+
+<script>
+	function meterZ(value){
+		let desiredElement = circuit.elements.find(elem => elem.name === "Rmeter").value=value
+		displayVoltage()
+	}
+</script>
+<script src="probes.js"></script>
+</body>
+</html>

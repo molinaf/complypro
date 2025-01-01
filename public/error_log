@@ -1,0 +1,9 @@
+[18-Dec-2024 21:45:39 UTC] PHP Fatal error:  Uncaught Error: Class "PHPMailer\PHPMailer\SMTP" not found in /home/oddzo549/complypro.com.au/public/phpmailer/src/PHPMailer.php:1989
+Stack trace:
+#0 /home/oddzo549/complypro.com.au/public/phpmailer/src/PHPMailer.php(2145): PHPMailer\PHPMailer\PHPMailer->getSMTPInstance()
+#1 /home/oddzo549/complypro.com.au/public/phpmailer/src/PHPMailer.php(2058): PHPMailer\PHPMailer\PHPMailer->smtpConnect()
+#2 /home/oddzo549/complypro.com.au/public/phpmailer/src/PHPMailer.php(1687): PHPMailer\PHPMailer\PHPMailer->smtpSend()
+#3 /home/oddzo549/complypro.com.au/public/phpmailer/src/PHPMailer.php(1521): PHPMailer\PHPMailer\PHPMailer->postSend()
+#4 /home/oddzo549/complypro.com.au/public/mailtest.php(26): PHPMailer\PHPMailer\PHPMailer->send()
+#5 {main}
+  thrown in /home/oddzo549/complypro.com.au/public/phpmailer/src/PHPMailer.php on line 1989

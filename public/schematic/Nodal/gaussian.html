@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gaussian Elimination</title>
+</head>
+<body>
+<h2>Gaussian Elimination Solver</h2>
+<div>
+    <label for="matrixA">Enter Coefficient Matrix (A):</label>
+    <textarea id="matrixA" rows="2" cols="20">[[1,-1],[-1,2]]</textarea>
+</div>
+<div>
+    <label for="matrixC">Enter Constants Matrix (C):</label>
+    <textarea id="matrixC" rows="2" cols="20">[[5],[0]]</textarea>
+</div>
+<button onclick="solveEquation()">Solve</button>
+<div id="result"></div>
+
+<script>
+function solveEquation() {
+    // Get matrices A and C from textareas
+    let A = JSON.parse(document.getElementById('matrixA').value);
+    let C = JSON.parse(document.getElementById('matrixC').value);
+    
+    // Perform Gaussian elimination
+    let n = A.length;
+    for (let i = 0; i < n; i++) {
+        // Find pivot row and swap
+        let maxIndex = i;
+        for (let j = i + 1; j < n; j++) {
+            if (Math.abs(A[j][i]) > Math.abs(A[maxIndex][i])) {
+                maxIndex = j;
+            }
+        }
+        [A[i], A[maxIndex]] = [A[maxIndex], A[i]];
+        [C[i], C[maxIndex]] = [C[maxIndex], C[i]];
+
+        // Make all elements below the pivot zero
+        for (let j = i + 1; j < n; j++) {
+            let factor = A[j][i] / A[i][i];
+            for (let k = i; k < n; k++) {
+                A[j][k] -= factor * A[i][k];
+            }
+            C[j][0] -= factor * C[i][0];
+        }
+    }
+
+    // Back substitution
+    let x = new Array(n).fill(0);
+    for (let i = n - 1; i >= 0; i--) {
+        x[i] = C[i][0];
+        for (let j = i + 1; j < n; j++) {
+            x[i] -= A[i][j] * x[j];
+        }
+        x[i] /= A[i][i];
+    }
+
+    // Display result
+    document.getElementById('result').innerText = "Solution: " + x.join(", ");
+}
+</script>
+</body>
+</html>

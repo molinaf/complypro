@@ -1,0 +1,22 @@
+[22-Nov-2024 00:42:34 UTC] PHP Warning:  Undefined array key "EndorserName" in /home/oddzo549/e2elearning.com.au/test/jasonDB/selectAuth.php on line 254
+[22-Nov-2024 00:42:36 UTC] PHP Warning:  Undefined array key "EndorserName" in /home/oddzo549/e2elearning.com.au/test/jasonDB/selectAuth.php on line 254
+[22-Nov-2024 00:42:50 UTC] PHP Warning:  Undefined array key "EndorserName" in /home/oddzo549/e2elearning.com.au/test/jasonDB/selectAuth.php on line 254
+[22-Nov-2024 00:43:36 UTC] PHP Warning:  parse_ini_file(config.ini): Failed to open stream: No such file or directory in /home/oddzo549/e2elearning.com.au/test/jasonDB/scormContainer.php on line 8
+[22-Nov-2024 00:43:36 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/oddzo549/e2elearning.com.au/test/jasonDB/scormContainer.php on line 17
+[22-Nov-2024 00:43:36 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/oddzo549/e2elearning.com.au/test/jasonDB/scormContainer.php on line 17
+[22-Nov-2024 00:45:34 UTC] PHP Warning:  parse_ini_file(config.ini): Failed to open stream: No such file or directory in /home/oddzo549/e2elearning.com.au/test/jasonDB/update_application.php on line 7
+[22-Nov-2024 00:45:34 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/oddzo549/e2elearning.com.au/test/jasonDB/update_application.php on line 17
+[22-Nov-2024 00:45:34 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/oddzo549/e2elearning.com.au/test/jasonDB/update_application.php on line 17
+[22-Nov-2024 00:45:39 UTC] PHP Warning:  parse_ini_file(config.ini): Failed to open stream: No such file or directory in /home/oddzo549/e2elearning.com.au/test/jasonDB/scormContainer.php on line 8
+[22-Nov-2024 00:45:39 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/oddzo549/e2elearning.com.au/test/jasonDB/scormContainer.php on line 17
+[22-Nov-2024 00:45:39 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/oddzo549/e2elearning.com.au/test/jasonDB/scormContainer.php on line 17
+[22-Nov-2024 00:46:07 UTC] PHP Warning:  parse_ini_file(config.ini): Failed to open stream: No such file or directory in /home/oddzo549/e2elearning.com.au/test/jasonDB/update_application.php on line 7
+[22-Nov-2024 00:46:07 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/oddzo549/e2elearning.com.au/test/jasonDB/update_application.php on line 17
+[22-Nov-2024 00:46:07 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/oddzo549/e2elearning.com.au/test/jasonDB/update_application.php on line 17
+[22-Nov-2024 00:54:35 UTC] PHP Warning:  Undefined array key "EndorserName" in /home/oddzo549/e2elearning.com.au/test/jasonDB/selectAuth.php on line 254
+[22-Nov-2024 00:55:19 UTC] PHP Warning:  parse_ini_file(config.ini): Failed to open stream: No such file or directory in /home/oddzo549/e2elearning.com.au/test/jasonDB/scormContainer.php on line 8
+[22-Nov-2024 00:55:19 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/oddzo549/e2elearning.com.au/test/jasonDB/scormContainer.php on line 17
+[22-Nov-2024 00:55:19 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/oddzo549/e2elearning.com.au/test/jasonDB/scormContainer.php on line 17
+[22-Nov-2024 00:55:58 UTC] PHP Warning:  parse_ini_file(config.ini): Failed to open stream: No such file or directory in /home/oddzo549/e2elearning.com.au/test/jasonDB/update_application.php on line 7
+[22-Nov-2024 00:55:58 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/oddzo549/e2elearning.com.au/test/jasonDB/update_application.php on line 17
+[22-Nov-2024 00:55:58 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/oddzo549/e2elearning.com.au/test/jasonDB/update_application.php on line 17
